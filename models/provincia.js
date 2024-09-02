@@ -1,5 +1,5 @@
-import db from '../db/connection.js'
-import { DataTypes } from 'sequelize'
+import db from '../utils/db-connection.js';
+import { DataTypes } from 'sequelize';
 
 export const provinciaModel = db.define(
   'provincia',
@@ -7,8 +7,8 @@ export const provinciaModel = db.define(
     nombre: {
       type: DataTypes.STRING,
       allowNull: false,
-      unique: true
-    }
+      unique: true,
+    },
   },
   { freezeTableName: true, timestamps: false }
-)
+);
