@@ -23,6 +23,8 @@
     "mysql2": "^3.9.4",
     "sequelize": "^6.33.0",
     "sharp": "^0.33.5",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1",
     "zod": "3.22.4"
   },
   "devDependencies": {
