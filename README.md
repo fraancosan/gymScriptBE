@@ -1,46 +1,37 @@
-# TpDsw | Repositorio BackEnd
+# GymScript | BackEnd
 
-Trabajo Practico de Desarrollo de Software UTN FRRO
+This project started as a final project for the “Software Development” course at the UTN FRRO university. The main objective of this project is to create a web application that allows the management of a gym.
+It was originally developed by a team of 5 students, after finishing the project, I decided to continue working on it to improve it and add more features. **The original project can be found in the [grupo-facultad branch](https://github.com/fraancosan/gymScriptBE/tree/grupo-facultad)**
 
-## Integrantes:
-
-- Fani, Nicolás | Legajo: 49449
-- Fina, Gino | Legajo: 49721
-- Sanchez, Franco Nahuel | Legajo: 49738
-- Mongelos, Manuel | Legajo: 48959
-- Zubiri, Joaquin | Legajo: 50206
-
-## Repositorios
+## Repositories
 
 - [**FrontEnd**](https://github.com/fraancosan/gymScriptFE)
-- [**BackEnd (Actual)**](https://github.com/JoaquinZubiri/ServidorDSW)
+- [**BackEnd (Actual)**](https://github.com/fraancosan/gymScriptBE)
 
-## [Descripción de Negocio](https://drive.google.com/file/d/1wwekkTi99xBK9NEA6BUtu4bnYpEpjds7/view?usp=sharing)
+## [Business Description](https://drive.google.com/file/d/1wwekkTi99xBK9NEA6BUtu4bnYpEpjds7/view?usp=sharing)
 
-## [Documentación Adicional](docs/README.md)
+## [Docs](docs/README.md)
 
-## Visualizacion del proyecto
+## Take a look
 
-[**Pagina Web**](https://francosanchez.me/gymScriptFE/home)
+- [**Web**](https://fraancosan.github.io/gymScriptFE/home)
+- [**Video**](https://youtu.be/u8zHUxM0M9Q)
 
-[**Video Demostracion**](https://youtu.be/u8zHUxM0M9Q)
+> [!IMPORTANT]
+> It is possible that data from the DB may take a while to load. This is because after a period of inactivity, the DB enters hibernation mode and must be reactivated when a query is made.
 
-[*(Viejo) Video Demostracion - Primera Version*](https://youtu.be/uJMpIO53Nyk)
+## Setup
 
-### Nota
+This project is running at: [**https://servidordsw.onrender.com**](https://servidordsw.onrender.com)
 
-Es posible que los datos provenientes de la BD tarden en cargarse, esto se debe dado a que luego de un periodo de inactividad esta misma entra en estado de hibernacion y cuando se le realiza una consulta debe volver a activarse.
+When running locally, the server will be available at: **`http://localhost:3000/`**
 
-## Ejecucion del Proyecto
+## Useful Commands
 
-Este proyecto se encuentra ejecutandose en: [**https://servidordsw.onrender.com**](https://servidordsw.onrender.com)
-
-## Comandos Útiles
-
-- Instalar Dependencias: npm install
-- Ejecutar Servidor
-  - Segun entorno:
+- Install dependencies: npm install
+- Run server:
+  - Choose environment:
     - Normal: npm run start
     - Dev: npm run dev
-  - El servidor se creara en: http://localhost:3000/
+  - It will be available at: **http://localhost:3000/**
 - Testing: npm run test
