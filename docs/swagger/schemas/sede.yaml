@@ -1,0 +1,15 @@
+components:
+  schemas:
+    Sede:
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int64
+        idLocalidad:
+          type: integer
+          format: int64
+        direccion:
+          type: string
+      xml:
+        name: Sede

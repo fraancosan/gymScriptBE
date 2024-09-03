@@ -1,0 +1,16 @@
+components:
+  schemas:
+    Sede-Act_Entrenadores:
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int64
+        idSedeAct:
+          type: integer
+          format: int64
+        idEntrenador:
+          type: integer
+          format: int64
+      xml:
+        name: Sede-Act_Entrenadores

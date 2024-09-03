@@ -1,0 +1,16 @@
+components:
+  schemas:
+    Sede-Actividad:
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int64
+        idSede:
+          type: integer
+          format: int64
+        idActividad:
+          type: integer
+          format: int64
+      xml:
+        name: Sede-Acividad

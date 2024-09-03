@@ -1,0 +1,25 @@
+components:
+  schemas:
+    Inscripcion:
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int64
+        idSede:
+          type: integer
+          format: int64
+        idUsuario:
+          type: integer
+          format: int64
+        idPlan:
+          type: integer
+          format: int64
+        fechaAlta:
+          type: string
+          format: date
+        fechaBaja:
+          type: string
+          format: date
+      xml:
+        name: Inscripcion

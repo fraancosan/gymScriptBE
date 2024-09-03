@@ -1,0 +1,22 @@
+components:
+  schemas:
+    CheckIn:
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int64
+        idUsuario:
+          type: integer
+          format: int64
+        idSede:
+          type: integer
+          format: int64
+        fecha:
+          type: string
+          format: date
+        hora:
+          type: string
+          format: time
+      xml:
+        name: CheckIn

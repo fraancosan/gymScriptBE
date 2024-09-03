@@ -1,0 +1,14 @@
+components:
+  schemas:
+    Actividades:
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int64
+        nombre:
+          type: string
+        descripcion:
+          type: string
+      xml:
+        name: Actividades

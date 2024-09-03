@@ -1,0 +1,18 @@
+components:
+  schemas:
+    Localidad:
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int64
+        idProvincia:
+          type: integer
+          format: int64
+        codPostal:
+          type: integer
+          format: int64
+        nombre:
+          type: string
+      xml:
+        name: Localidad

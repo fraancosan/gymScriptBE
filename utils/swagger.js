@@ -20,12 +20,12 @@ const options = {
         description: 'Development server',
       },
     ],
+    externalDocs: {
+      description: 'API Github Repo',
+      url: 'https://github.com/fraancosan/gymScriptBE',
+    },
   },
-  apis: ['../routes/*.js'],
-  externalDocs: {
-    description: 'Find out more about GymScript',
-    url: 'https://github.com/fraancosan/gymScriptBE',
-  },
+  apis: ['./docs/swagger/routes/*.yaml', './docs/swagger/schemas/*.yaml'],
 };
 
 const swaggerSpec = swaggerJSDoc(options);

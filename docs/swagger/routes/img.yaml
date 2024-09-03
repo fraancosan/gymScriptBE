@@ -1,0 +1,33 @@
+/img/{name}-{size}.webp:
+  get:
+    tags:
+      - img
+    summary: Get image by name
+    description: Returns an image
+    parameters:
+      - name: name
+        in: path
+        description: Image name
+        required: true
+        schema:
+          type: string
+      - name: size
+        in: path
+        description: Image size
+        required: true
+        schema:
+          type: string
+          enum:
+            - small
+            - medium
+            - large
+    responses:
+      '200':
+        description: Image found
+        content:
+          image/webp:
+            schema:
+              type: string
+              format: binary
+      '404':
+        description: Image not found

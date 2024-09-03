@@ -1,0 +1,17 @@
+components:
+  schemas:
+    Plan:
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int64
+        nombre:
+          type: string
+        descripcion:
+          type: string
+        precioMensual:
+          type: integer
+          format: float
+      xml:
+        name: Plan

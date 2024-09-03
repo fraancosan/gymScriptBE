@@ -1,0 +1,16 @@
+components:
+  schemas:
+    Plan-Actividad:
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int64
+        idPlan:
+          type: integer
+          format: int64
+        idActividad:
+          type: integer
+          format: int64
+      xml:
+        name: Plan-Actividad

@@ -1,0 +1,22 @@
+components:
+  schemas:
+    Cuota:
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int64
+        idInscripcion:
+          type: integer
+          format: int64
+        fechaPago:
+          type: string
+          format: date
+        importe:
+          type: number
+          format: float
+        fechaVenc:
+          type: string
+          format: date
+      xml:
+        name: Cuota

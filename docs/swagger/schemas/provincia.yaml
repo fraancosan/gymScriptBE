@@ -1,0 +1,12 @@
+components:
+  schemas:
+    Provincia:
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int64
+        nombre:
+          type: string
+      xml:
+        name: Provincia
