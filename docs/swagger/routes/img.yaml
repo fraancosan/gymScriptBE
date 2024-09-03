@@ -1,7 +1,10 @@
+tags:
+  name: Imagenes
+  description: Images of products
 /img/{name}-{size}.webp:
   get:
     tags:
-      - img
+      - Imagenes
     summary: Get image by name
     description: Returns an image
     parameters:
