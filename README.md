@@ -9,8 +9,6 @@ It was originally developed by a team of 5 students, after finishing the project
 - [**FrontEnd**](https://github.com/fraancosan/gymScriptFE)
 - [**BackEnd (Actual)**](https://github.com/fraancosan/gymScriptBE)
 
-## [Business Description](https://drive.google.com/file/d/1wwekkTi99xBK9NEA6BUtu4bnYpEpjds7/view?usp=sharing)
-
 ## [Docs](docs/README.md)
 
 ## Take a look
@@ -23,7 +21,7 @@ It was originally developed by a team of 5 students, after finishing the project
 
 ## Setup
 
-This project is running at: [**`https://servidordsw.onrender.com`**](https://servidordsw.onrender.com)
+This project is running at: [**`https://gymscriptbe.onrender.com/`**](https://gymscriptbe.onrender.com/)
 
 When running locally, the server will be available at: **`http://localhost:3000/`**
 
