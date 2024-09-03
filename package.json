@@ -7,7 +7,12 @@
   "scripts": {
     "start": "node index.js",
     "dev": "node --watch index.js",
-    "test": "set NODE_OPTIONS=--experimental-vm-modules --trace-warnings && npx jest --detectOpenHandles --runInBand"
+    "test": "set NODE_OPTIONS=--experimental-vm-modules --trace-warnings && npx jest --detectOpenHandles --runInBand",
+    "docker": "docker compose --env-file .env.dev.docker -f docker-compose-dev.yml start",
+    "docker/create": "docker compose --env-file .env.dev.docker -f docker-compose-dev.yml up --build -d && docker image prune -f",
+    "docker/stop": "docker compose --env-file .env.dev.docker -f docker-compose-dev.yml stop",
+    "docker/rm": "docker compose --env-file .env.dev.docker -f docker-compose-dev.yml down",
+    "docker-prod": "docker compose --env-file .env.docker up --build -d && docker image prune -f"
   },
   "keywords": [],
   "author": "",
