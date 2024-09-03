@@ -1,0 +1,18 @@
+components:
+  schemas:
+    error-500:
+      type: object
+      properties:
+        error:
+          type: string
+        msg:
+          type: string
+      xml:
+        name: error-500
+    error-404:
+      type: object
+      properties:
+        msg:
+          type: string
+      xml:
+        name: error-404
