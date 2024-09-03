@@ -1,14 +1,15 @@
-import { Router } from 'express'
-import { provinciasController } from '../controllers/provincias.js'
+import { Router } from 'express';
+import { provinciasController } from '../controllers/provincias.js';
+import { authAdmin } from '../middleware/auth.js';
 
-export const provinciaRouter = Router()
+export const provinciaRouter = Router();
 
-provinciaRouter.get('/', provinciasController.getAll)
+provinciaRouter.get('/', provinciasController.getAll);
 
-provinciaRouter.get('/:id', provinciasController.getById)
+provinciaRouter.get('/:id', provinciasController.getById);
 
-provinciaRouter.post('/', provinciasController.create)
+provinciaRouter.post('/', authAdmin, provinciasController.create);
 
-provinciaRouter.patch('/:id', provinciasController.update)
+provinciaRouter.patch('/:id', authAdmin, provinciasController.update);
 
-provinciaRouter.delete('/:id', provinciasController.delete)
+provinciaRouter.delete('/:id', authAdmin, provinciasController.delete);

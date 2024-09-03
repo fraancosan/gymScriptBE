@@ -16,7 +16,6 @@ import { entrenadorRouter } from './routes/entrenador.js';
 import { sedeActEntrenadorRouter } from './routes/sede-act_entrenador.js';
 import { checkInRouter } from './routes/check-in.js';
 
-import { authAdmin } from './middleware/auth.js';
 import 'dotenv/config';
 import { setupSwagger } from './utils/swagger.js';
 
@@ -42,12 +41,11 @@ app.use('/inscripciones', inscripcionRouter);
 app.use('/actividades', actividadRouter);
 app.use('/cuotas', cuotaRouter);
 app.use('/localidades', localidadRouter);
-app.use('/', authAdmin);
-app.use('/check-in', checkInRouter);
 app.use('/provincias', provinciaRouter);
+app.use('/check-in', checkInRouter);
 
 app.use((_, res) => {
-  res.status(404).json({ error: 'Recurso no encontrado' });
+  res.status(404).json({ error: 'Not found' });
 });
 
 export default app;

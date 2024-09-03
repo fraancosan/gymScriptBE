@@ -1,16 +1,21 @@
-import { Router } from 'express'
-import { checkInController } from '../controllers/check-in.js'
+import { Router } from 'express';
+import { checkInController } from '../controllers/check-in.js';
+import { authAdmin } from '../middleware/auth.js';
 
-export const checkInRouter = Router()
+export const checkInRouter = Router();
 
-checkInRouter.get('/', checkInController.getAll)
+checkInRouter.get('/', authAdmin, checkInController.getAll);
 
-checkInRouter.get('/:id', checkInController.getById)
+checkInRouter.get('/:id', authAdmin, checkInController.getById);
 
-checkInRouter.post('/', checkInController.create)
+checkInRouter.post('/', authAdmin, checkInController.create);
 
-checkInRouter.patch('/:id', checkInController.update)
+checkInRouter.patch('/:id', authAdmin, checkInController.update);
 
-checkInRouter.delete('/:id', checkInController.delete)
+checkInRouter.delete('/:id', authAdmin, checkInController.delete);
 
-checkInRouter.get('/accessControl/:id', checkInController.accessControl)
+checkInRouter.get(
+  '/accessControl/:id',
+  authAdmin,
+  checkInController.accessControl
+);
