@@ -1,0 +1,46 @@
+services:
+  app:
+    image: gymscript-app
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: gymscript-app
+    restart: unless-stopped
+    ports:
+      - '${PORT}:${PORT}'
+    volumes:
+      - public:/home/app/public
+    environment:
+      PORT: ${PORT}
+      SECRET_KEY: ${SECRET_KEY}
+      SCHEMADB: ${SCHEMADB}
+      USERDB: ${USERDB}
+      PASSWORDDB: ${PASSWORDDB}
+      HOSTDB: ${HOSTDB}
+      PORTDB: 3306
+    networks:
+      - gymscript
+  mysql:
+    container_name: gymscript-mysql
+    image: mysql:8.0.35
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${SCHEMADB}
+      MYSQL_USER: ${USERDB}
+      MYSQL_PASSWORD: ${PASSWORDDB}
+    ports:
+      - '${PORTDB_REAL_COMPUTER}:3306'
+    volumes:
+      - mysql:/var/lib/mysql
+    networks:
+      - gymscript
+
+networks:
+  gymscript:
+    name: gymscript
+    driver: bridge
+
+volumes:
+  mysql:
+  public:

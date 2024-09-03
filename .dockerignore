@@ -3,7 +3,7 @@ node_modules
 npm-debug.log
 
 #.env file
-.env*
+.env
 
 # Visual Studio Code
 .vscode/*
@@ -12,3 +12,7 @@ npm-debug.log
 !.vscode/launch.json
 !.vscode/extensions.json
 .history/*
+
+# Docker
+Dockerfile*
+docker-compose*
