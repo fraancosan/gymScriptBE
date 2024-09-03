@@ -45,7 +45,7 @@ app.use('/provincias', provinciaRouter);
 app.use('/check-in', checkInRouter);
 
 app.use((_, res) => {
-  res.status(404).json({ error: 'Not found' });
+  res.status(404).json({ msg: 'Not found' });
 });
 
 export default app;
