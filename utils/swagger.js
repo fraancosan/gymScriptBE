@@ -28,8 +28,12 @@ const options = {
   apis: ['./docs/swagger/routes/*.yaml', './docs/swagger/schemas/*.yaml'],
 };
 
+const noHeader = {
+  customCss: '.swagger-ui .topbar { display: none }',
+};
+
 const swaggerSpec = swaggerJSDoc(options);
 
 export function setupSwagger(app) {
-  app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
+  app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec, noHeader));
 }
