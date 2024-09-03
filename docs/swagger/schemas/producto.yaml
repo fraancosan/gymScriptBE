@@ -6,13 +6,18 @@ components:
         id:
           type: integer
           format: int64
+          example: 1
         nombre:
           type: string
+          example: Producto 1
         descripcion:
           type: string
+          example: Descripcion del producto 1
         tipo:
           type: string
+          example: Bebida
         img:
           type: string
+          example: img/192949.webp
       xml:
         name: Producto

@@ -6,21 +6,29 @@ components:
         id:
           type: integer
           format: int64
+          example: 9974
         nombre:
           type: string
+          example: Juan
         apellido:
           type: string
+          example: Perez
         dni:
           type: integer
           format: int64
+          example: 32974846
         telefono:
           type: integer
           format: int64
+          example: 123456789
         mail:
           type: string
+          example: juanperez@gmail.com
         contraseña:
           type: string
+          example: $9a$61$.FqsEAz1n1l7DzEM3lQYEa2xYtlM.b8S1q1QbzoPIYq7mm21iTieS
         rol:
           type: string
+          example: user
       xml:
         name: Usuario

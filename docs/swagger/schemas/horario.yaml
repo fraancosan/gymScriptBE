@@ -6,11 +6,14 @@ components:
         id:
           type: integer
           format: int64
+          example: 1
         idSedeAct:
           type: integer
           format: int64
+          example: 16
         dia:
           type: string
+          example: Lunes
           enum:
             - Lunes
             - Martes
@@ -22,8 +25,10 @@ components:
         horaDesde:
           type: string
           format: time
+          example: 08:00:00
         horaHasta:
           type: string
           format: time
+          example: 12:00:00
       xml:
         name: Horario

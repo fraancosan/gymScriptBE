@@ -6,11 +6,14 @@ components:
         id:
           type: integer
           format: int64
+          example: 1
         idSedeAct:
           type: integer
           format: int64
+          example: 15
         idEntrenador:
           type: integer
           format: int64
+          example: 19
       xml:
         name: Sede-Act_Entrenadores

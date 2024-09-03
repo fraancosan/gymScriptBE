@@ -6,17 +6,22 @@ components:
         id:
           type: integer
           format: int64
+          example: 1
         idInscripcion:
           type: integer
           format: int64
+          example: 12
         fechaPago:
           type: string
           format: date
+          example: 2024-05-21
         importe:
           type: number
           format: float
+          example: 1000.0
         fechaVenc:
           type: string
           format: date
+          example: 2024-06-21
       xml:
         name: Cuota

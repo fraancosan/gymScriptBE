@@ -6,12 +6,16 @@ components:
         id:
           type: integer
           format: int64
+          example: 1
         nombre:
           type: string
+          example: Entrenador 1
         apellido:
           type: string
+          example: Apellido 1
         telefono:
           type: integer
           format: int64
+          example: 123456789
       xml:
         name: Entrenadores

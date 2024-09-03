@@ -6,9 +6,12 @@ components:
         id:
           type: integer
           format: int64
+          example: 1
         nombre:
           type: string
+          example: Actividad 1
         descripcion:
           type: string
+          example: Descripcion de la actividad 1
       xml:
         name: Actividades

@@ -6,10 +6,13 @@ components:
         id:
           type: integer
           format: int64
+          example: 156
         idLocalidad:
           type: integer
           format: int64
+          example: 11
         direccion:
           type: string
+          example: Av. San Martín 1234
       xml:
         name: Sede

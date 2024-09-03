@@ -6,12 +6,16 @@ components:
         id:
           type: integer
           format: int64
+          example: 1
         nombre:
           type: string
+          example: Plan Dorado
         descripcion:
           type: string
+          example: Plan de entrenamiento dorado
         precioMensual:
           type: integer
           format: float
+          example: 1000.0
       xml:
         name: Plan

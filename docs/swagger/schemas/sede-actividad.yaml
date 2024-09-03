@@ -6,11 +6,14 @@ components:
         id:
           type: integer
           format: int64
+          example: 11
         idSede:
           type: integer
           format: int64
+          example: 97
         idActividad:
           type: integer
           format: int64
+          example: 115
       xml:
         name: Sede-Acividad

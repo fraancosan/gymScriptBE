@@ -6,13 +6,17 @@ components:
         id:
           type: integer
           format: int64
+          example: 9
         idProvincia:
           type: integer
           format: int64
+          example: 39
         codPostal:
           type: integer
           format: int64
+          example: 2000
         nombre:
           type: string
+          example: Rosario
       xml:
         name: Localidad

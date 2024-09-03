@@ -6,20 +6,26 @@ components:
         id:
           type: integer
           format: int64
+          example: 9
         idSede:
           type: integer
           format: int64
+          example: 4
         idUsuario:
           type: integer
           format: int64
+          example: 86
         idPlan:
           type: integer
           format: int64
+          example: 3
         fechaAlta:
           type: string
           format: date
+          example: 2024-05-21
         fechaBaja:
           type: string
           format: date
+          example: 2024-06-21
       xml:
         name: Inscripcion

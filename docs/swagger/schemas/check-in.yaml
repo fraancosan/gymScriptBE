@@ -6,17 +6,22 @@ components:
         id:
           type: integer
           format: int64
+          example: 1
         idUsuario:
           type: integer
           format: int64
+          example: 54
         idSede:
           type: integer
           format: int64
+          example: 7
         fecha:
           type: string
           format: date
+          example: 2024-05-21
         hora:
           type: string
           format: time
+          example: 12:00:00
       xml:
         name: CheckIn

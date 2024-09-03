@@ -6,11 +6,14 @@ components:
         id:
           type: integer
           format: int64
+          example: 1
         idPlan:
           type: integer
           format: int64
+          example: 12
         idActividad:
           type: integer
           format: int64
+          example: 115
       xml:
         name: Plan-Actividad
