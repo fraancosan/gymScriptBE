@@ -1,13 +1,25 @@
-FROM node:20.17.0
+# Dev image
+
+# Builder image
+FROM node:20.17.0 AS builder
 
 
 RUN mkdir -p /home/app
 
 WORKDIR /home/app
 
-COPY package*.json ./
+COPY ["package.json", "package-lock.json*", "./"]
 
 RUN npm install
+
+# Final image
+FROM node:20.17.0-slim
+
+USER node
+
+COPY --from=builder /home/app /home/app
+
+WORKDIR /home/app
 
 EXPOSE 3000
 
