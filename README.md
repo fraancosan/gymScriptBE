@@ -7,14 +7,14 @@ It was originally developed by a team of 5 students, after finishing the project
 ## Repositories
 
 - [**FrontEnd**](https://github.com/fraancosan/gymScriptFE)
-- [**BackEnd (Actual)**](https://github.com/fraancosan/gymScriptBE)
+- [**BackEnd (Current)**](https://github.com/fraancosan/gymScriptBE)
 
 ## [Docs](docs/README.md)
 
-## Take a look
+## Take a Look
 
-- [**Web**](https://fraancosan.github.io/gymScriptFE/home)
-- [**Video**](https://youtu.be/u8zHUxM0M9Q)
+- [**Web**](https://gymscript.francosanchez.com.ar)
+- [**Video**](https://www.youtube.com/watch?v=REjqzzRXUvY)
 
 > [!IMPORTANT]
 > It is possible that data from the DB may take a while to load. This is because after a period of inactivity, the DB enters hibernation mode and must be reactivated when a query is made.
@@ -27,10 +27,10 @@ When running locally, the server will be available at: **`http://localhost:3000/
 
 ## Useful Commands
 
-- Install dependencies: npm install
+- Install dependencies: `npm install`
 - Run server:
   - Choose environment:
-    - Normal: npm run start
-    - Dev: npm run dev
+    - Normal: `npm run start`
+    - Dev: `npm run dev`
   - It will be available at: **`http://localhost:3000/`**
-- Testing: npm run test
+- Testing: `npm run test`
